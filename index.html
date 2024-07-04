@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+        <title>Coding Assesment L2 boilerplate</title>
+
+    </head>
+
+    <body>
+        <!-- Your code goes here -->
+        <div class="product-container">
+            <div class="product-images">
+                <img id="mainImage" src alt="Product Image">
+                <div class="thumbnails" id="thumbnails"></div>
+            </div>
+            <div class="product-details">
+                <h4 class="vendor" id="vendor"></h4>
+                <h1 class="title" id="title"></h1>
+                <hr>
+                <div class="price-container">
+                    <span class="price" id="price"></span>
+                    <span class="compare-at-price"
+                        id="compare-at-price"><del></del></span>
+                    <span class="discount" id="discount"></span>
+                </div>
+                <hr>
+                <div class="variant-selector">
+                    <div class="option-group">
+                        <label for="color">Choose a Color:</label>
+                        <div id="colorOptions" class="option-container">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="option-group">
+                        <label for="size">Choose a Size:</label>
+                        <div id="sizeOptions" class="option-container">
+                        </div>
+                    </div>
+                </div>
+                <div class="quantity-selector">
+                    <button onclick="changeQuantity(-1)">-</button>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <button onclick="changeQuantity(1)">+</button>
+                </div>
+                <button class="add-to-cart" onclick="addToCart()">Add to
+                    Cart</button>
+                <div id="cart-message" class="cart-message"></div>
+                <hr>
+                <p class="description" id="description"></p>
+            </div>
+        </div>
+        <!-- <div class="container">
+        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+    </div> -->
+        <!-- Happy coding 😊 -->
+        <script src="./script.js"></script>
+    </body>
+
+</html>
